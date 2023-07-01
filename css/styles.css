@@ -1,0 +1,120 @@
+:root {
+    --ButtonGreen: #BBF330;
+    --DarkGreen: #7EB101;
+    --YellowMain: #FFE550;
+    --Black: #2C2C2C;
+    --White: #FEFEFE;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--Black);
+    background-color: var(--White);
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
+
+
+/* Header */
+
+.page-header {
+    background: var(--White);
+    box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-list {
+    display: flex;
+    gap: 28px;
+    padding: 28px;
+}
+
+.nav-link {
+    color: var(--Black);
+    font-size: 14px;
+}
+
+.nav-link.active {
+    color: var(--ButtonGreen);
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--ButtonGreen);
+}
+
+.header-btn {
+    width: 98px;
+    height: 32px;
+    display: flex;
+    padding: 6px 18px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--ButtonGreen);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: var(--YellowMain);
+}

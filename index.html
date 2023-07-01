@@ -3,32 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="
+    https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
+    " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>FoodSta</title>
 </head>
 
 <body>
     <!-- Page Header -->
-    <header>
-        <a href="./index.html"><img src="./images/logofoodsta.svg" alt="Logo FoodSta"></a>
-        <ul>
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Service</a>
-            </li>
-            <li>
-                <a href="">Menu</a>
-            </li>
-            <li>
-                <a href="">Contact</a>
-            </li>
-        </ul>
-        <button type="button">Order Now</button>
+    <header class="page-header">
+        <div class="container  header-container">
+            <a href="./index.html"><img src="./images/logofoodsta.svg" alt="Logo FoodSta"></a>
+            <div class="header-right">
+                <nav>
+                    <ul class="header-list list">
+                        <li>
+                            <a class="nav-link active link" href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link" href="">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link" href="">Service</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link" href="">Menu</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header-btn" type="button">Order Now</button>
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
