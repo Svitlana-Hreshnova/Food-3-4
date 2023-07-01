@@ -62,7 +62,6 @@ img {
 /* Header */
 
 .page-header {
-    background: var(--White);
     box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
 }
 
@@ -111,10 +110,75 @@ img {
     background-color: var(--ButtonGreen);
     font-size: 13px;
     font-weight: 500;
-    line-height: 150%;
+    line-height: 1.5;
 }
 
 .header-btn:hover,
 .header-btn:focus {
     background-color: var(--YellowMain);
+}
+
+
+
+
+/* Main */
+
+
+/* Hero */
+
+.hero-page {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    width: 515px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.main-text {
+    width: 515px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 52px;
+}
+
+.hero-image {
+    padding: 10.5px;
+    border-radius: 560px;
+    border: 14px solid var(--YellowMain);
+    background: #FFF;
+}
+
+
+/* Offerings */
+
+.page-offerings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--YellowMain);
+}
+
+.offerings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offerings-image {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    padding-top: 0;
+    border-radius: 550px;
+    border: 5px solid rgba(255, 255, 255, 0.50);
 }
