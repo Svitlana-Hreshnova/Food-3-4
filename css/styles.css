@@ -100,12 +100,10 @@ img {
 }
 
 .header-btn {
-    width: 98px;
-    height: 32px;
     display: flex;
-    padding: 6px 18px;
     justify-content: center;
     text-align: center;
+    padding: 6px 18px;
     border-radius: 30px;
     background-color: var(--ButtonGreen);
     font-size: 13px;
@@ -172,13 +170,233 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 114px;
+    
 }
 
 .offerings-image {
     width: 100%;
     height: 100%;
-    padding: 24px;
-    padding-top: 0;
+    padding: 0 19px 19px;
     border-radius: 550px;
     border: 5px solid rgba(255, 255, 255, 0.50);
+}
+
+.offerings-title {
+    width: 526px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offerings-text {
+    width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+
+.offerings-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 67px;
+}
+
+.offerings-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--White);
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+.offerings-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.offerings-list-text {
+    width: 230px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 58px;
+}
+
+.offerings-btn {
+    width: 106px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 30px;
+    border: 2px solid var(--DarkGreen);
+    background: var(--White);
+}
+
+.offerings-btn:hover,
+.offerings-btn:focus {
+    border: none;
+    background-color: #BBF330;
+}
+
+
+
+/* Menu */
+
+.menu-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.menu-text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+
+.menu-image {
+    padding: 25px 24px;
+    border-radius: 197.5px;
+    border: 16px solid var(--YellowMain);
+    background: var(--White);
+    width: 394px;
+    height: 397px;
+}
+
+.menu-image:hover,
+.menu-image:focus {
+    border-color: var(--ButtonGreen);
+    cursor: pointer;
+}
+
+.menu-list-image {
+    /* flex: 1 0 calc((100% - 2 * 32px) / 3);
+    max-width: calc((100% - 2 * 32px) / 3); */
+    /* flex-basis: calc((100% - 2 * 32px) / 3); 
+    /* flex: 1 0 auto;
+    min-width: calc((100% - 2 * 32px) / 3); */
+    max-width: calc(1280px / 3 - 32px);
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+}
+
+
+
+
+/* Feedback */
+
+.feedback-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--YellowMain);
+}
+
+.feedback-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feedback-text {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.feedback-list {
+    display: flex;
+    gap: 140px;
+}
+
+.feedback-item {
+    background-color: var(--White);
+    width: 501px;
+    height: 227px;
+    padding: 14px;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+}
+
+.star-wrap {
+    display: flex;
+    gap: 4px;
+}
+
+.feedback {
+    width: 473px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 42px;
+}
+
+.feedback-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-image {
+    border: 2px solid var(--YellowMain);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+.user-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Registration */
+
+.registration-page {
+    padding-top: 89px;
+    padding-bottom: 88px;
+}
+
+.registration-container {
+    display: flex;
+    gap: 46px;
+}
+
+.registration-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.registration-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 34px;
 }
