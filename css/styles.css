@@ -58,6 +58,19 @@ img {
 
 
 
+/* Logo */
+
+.logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover,
+.logo.focus {
+    transform: scale(1.1);
+}
+
+
+
 
 /* Header */
 
@@ -86,6 +99,7 @@ img {
 .nav-link {
     color: var(--Black);
     font-size: 14px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link.active {
@@ -109,6 +123,7 @@ img {
     font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .header-btn:hover,
@@ -212,6 +227,7 @@ img {
     border-radius: 48px;
     width: 48px;
     height: 48px;
+    
 }
 
 .offerings-list-title {
@@ -241,6 +257,7 @@ img {
     border-radius: 30px;
     border: 2px solid var(--DarkGreen);
     background: var(--White);
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .offerings-btn:hover,
@@ -278,6 +295,7 @@ img {
     background: var(--White);
     width: 394px;
     height: 397px;
+    transition: border-color 0.3s ease-in-out;
 }
 
 .menu-image:hover,
@@ -399,4 +417,82 @@ img {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 34px;
+}
+
+
+
+/* Footer */
+
+.page-footer {
+    margin: 0 auto;
+    background-color: var(--White);
+    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);  
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 102px;
+    max-width: 1280px;
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 129px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: 148px;
+    margin-right: 320px;
+}
+
+.footer-link {
+    color: var(--Black);
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--ButtonGreen);
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.library-link {
+    color: var(--DarkGreen);
+    font-size: 12px;
+    text-decoration-line: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.library-link:hover,
+.library-link:focus {
+    color: var(--ButtonGreen);
+}
+
+.copyright {
+    font-size: 12px;
 }
