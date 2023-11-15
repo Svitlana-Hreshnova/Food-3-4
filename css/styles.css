@@ -4,6 +4,7 @@
     --YellowMain: #FFE550;
     --Black: #2C2C2C;
     --White: #FEFEFE;
+    --neutral-dark-gray: #505050;
 }
 
 body {
@@ -56,6 +57,9 @@ img {
     list-style: none;
 }
 
+input {
+    font-family: inherit;
+}
 
 
 /* Logo */
@@ -185,14 +189,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 114px;
+    gap: 126px;
     
 }
 
 .offerings-image {
-    width: 100%;
-    height: 100%;
-    padding: 0 19px 19px;
+    padding: 19px 19px;
     border-radius: 550px;
     border: 5px solid rgba(255, 255, 255, 0.50);
 }
@@ -305,11 +307,6 @@ img {
 }
 
 .menu-list-image {
-    /* flex: 1 0 calc((100% - 2 * 32px) / 3);
-    max-width: calc((100% - 2 * 32px) / 3); */
-    /* flex-basis: calc((100% - 2 * 32px) / 3); 
-    /* flex: 1 0 auto;
-    min-width: calc((100% - 2 * 32px) / 3); */
     max-width: calc(1280px / 3 - 32px);
 }
 
@@ -419,6 +416,58 @@ img {
     margin-bottom: 34px;
 }
 
+.reg-form {
+    display: flex;
+    gap: 21px;
+}
+
+.reg-form-input {
+    display: inline-flex;
+    align-items: center;
+    width: 395px;
+    padding: 12px 57px 12px 12px;
+    border-radius: 30px;
+    border: 0.854px solid var(--YellowMain);
+    background: var(--White);
+    outline: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    transition: border 0.3s ease-in-out;
+}
+
+.reg-form-input::placeholder {
+    color: var(--neutral-dark-gray);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.reg-form-input:focus,
+.reg-form-input:active {
+    border: 0.854px solid var(--DarkGreen);
+}
+
+.reg-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 22px;
+    border-radius: 30px;
+    background: var(--ButtonGreen);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reg-form-btn:hover,
+.reg-form-btn:focus,
+.reg-form-btn:active {
+    background-color: var(--YellowMain);
+}
+
+
 
 
 /* Footer */
@@ -434,6 +483,7 @@ img {
     padding-bottom: 102px;
     max-width: 1280px;
     background-image: url(../images/footer.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
