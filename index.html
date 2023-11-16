@@ -27,7 +27,7 @@
                 </svg>
             </a>
             <div class="header-right">
-                <nav>
+                <nav class="header-nav">
                     <ul class="header-list list">
                         <li>
                             <a class="nav-link active link" href="./index.html">Home</a>
@@ -47,6 +47,12 @@
                     </ul>
                 </nav>
                 <button class="header-btn" type="button">Order Now</button>
+
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="burger-menu" width="28" height="28">
+                        <use href="./images/icons.svg#burger-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -64,16 +70,22 @@
                         tristique. Duis
                         cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
                     </p>
-                    <button class="header-btn" type="button">Order Now</button>
+                    <button class="hero-btn" type="button">Order Now</button>
                 </div>
-                <img class="hero-image" src="./images/hero.png" alt="meal" width="511" height="511">
+                <img class="hero-image" src="./images/hero.png" alt="meal" width="292" height="292">
             </div>
         </section>
         <!-- Offerings -->
         <section class="page-offerings">
             <div class="container offerings-container">
-                <img class="offerings-image" src="./images/apple.png" alt="Apple" width="502" height="502">
-                <div class="offerings-wrap">
+                <div class="apple-wrap">
+                    <img class="offerings-image" src="./images/apple.png" alt="Apple" width="280" height="280">
+                    <div class="add-apples-wrap">
+                        <img src="./images/apple_2.png" alt="Apple" width="166" height="211">
+                        <img src="./images/apple_3.png" alt="Apple" width="108" height="136">
+                    </div>
+                </div>
+                <div>
                     <h2 class="offerings-title">What&rsquo;s Special About Our Offerings</h2>
                     <p class="offerings-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                         varius enim in eros
@@ -105,7 +117,15 @@
                             </p>
                         </li>
                     </ul>
-                    <button class="offerings-btn" type="button">Order Now</button>
+                    <div class="offerings-wrap">
+                        <button class="offerings-btn" type="button">Order Now</button>
+                        <div class="wrap-add-el">
+                            <p class="offerings-text-el">Read More</p>
+                            <svg width="13.5" height="13.5">
+                                <use href="./images/icons.svg#icon-more"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -257,18 +277,29 @@
                         <a class="footer-link link" href="">Contact</a>
                     </li>
                 </ul>
-                <p class="footer-text">Subscribe</p>
+                <form name="form_footer" autocomplete="on" class="footer-form">
+                    <label class="form-footer-text" for="footer-user-email">Subscribe</label>
+                    <div class="form-footer-wrap">
+                        <input class="footer-form-input" type="text" name="footer-user-email" id="footer-user-email"
+                            placeholder="Enter your email">
+                        <button class="footer-form-btn">Subscribe</button>
+                    </div>
+                    <p class="footer-text">By subscribing you agree to with our
+                        <a class="library-link" href="">Privacy Policy</a>
+                    </p>
+                </form>
+
             </div>
             <div class="footer-library">
                 <ul class="library-list list">
                     <li>
-                        <a class="library-link link" href="">Privacy Policy</a>
+                        <a class="library-link" href="">Privacy Policy</a>
                     </li>
                     <li>
-                        <a class="library-link link" href="">Terms of Service</a>
+                        <a class="library-link" href="">Terms of Service</a>
                     </li>
                     <li>
-                        <a class="library-link link" href="">Cookies Settings</a>
+                        <a class="library-link" href="">Cookies Settings</a>
                     </li>
                 </ul>
                 <p class="copyright">2022 FoodSta. All right reserved.</p>
