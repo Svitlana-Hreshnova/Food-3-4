@@ -1224,6 +1224,10 @@ input {
 
 /* Mobile menu */
 
+.mb-menu-backdrop {
+
+}
+
 .mb-menu {
     position: fixed;
     top: 50px;
@@ -1278,6 +1282,12 @@ input {
     }
 }
 
+@media screen and (min-width: 735px) {
+    .mb-menu {
+        right: 235;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .mb-menu {
         display: none;
@@ -1311,4 +1321,10 @@ input {
 
 .mb-menu-link {
     color: #000;
+}
+
+.mb-menu-link:hover,
+.mb-menu-link:focus,
+.mb-menu-link:active {
+    color: var(--DarkGreen);
 }
