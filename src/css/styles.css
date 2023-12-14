@@ -196,8 +196,7 @@ input {
     transition: fill 0.3s ease-in-out;
 }
 
-.burger-menu:focus,
-.burger-menu:active {
+.burger-menu:hover {
     fill: var(--YellowMain);
 }
 
@@ -1223,10 +1222,6 @@ input {
 
 
 /* Mobile menu */
-
-.mb-menu-backdrop {
-
-}
 
 .mb-menu {
     position: fixed;

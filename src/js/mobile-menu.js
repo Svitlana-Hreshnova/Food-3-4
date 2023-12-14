@@ -4,14 +4,10 @@ const mobileMenuTriggerButton = document.querySelector('.js-open-menu')
 mobileMenuTriggerButton.addEventListener('click', createMobileMenu)
 
 function createMobileMenu() {
-    const mobileMenuBackdrop = document.createElement('div');
-    mobileMenuBackdrop.classList.add('mb-menu-backdrop')
-    mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
-    document.body.appendChild(mobileMenuBackdrop);
 
     const mobileMenu = document.createElement('div');
     mobileMenu.classList.add('mb-menu');
-    mobileMenuBackdrop.appendChild(mobileMenu);
+    document.body.appendChild(mobileMenu);
 
     const mobileMenuButton = document.createElement('button');
     mobileMenuButton.classList.add('mb-menu-button');
@@ -55,39 +51,39 @@ function createMobileMenu() {
 
     document.body.style.overflow = 'hidden';
 
+    const burgerMenuIcon = mobileMenuTriggerButton.querySelector('.burger-menu');
+
+    burgerMenuIcon.style.fill = 'var(--YellowMain)'
+
+    document.addEventListener('click', handleClickOutside);
+
+ function handleClickOutside(e) {
+        const isClickInsideMobileMenu = mobileMenu.contains(e.target);
+        const isClickInsideTriggerButton = mobileMenuTriggerButton.contains(e.target);
+        if (!isClickInsideMobileMenu && !isClickInsideTriggerButton) {
+            closeMobileMenu();
+            document.removeEventListener('click', handleClickOutside);
+        }
+    }
+
+    function handleContentClick(e) {
+        e.stopPropagation();
+    }
+
+    mobileMenu.addEventListener('click', handleContentClick)
+
     function closeMobileMenu() {
-    mobileMenuBackdrop.removeEventListener('click', closeMobileMenu);
     mobileMenuButton.removeEventListener('click', closeMobileMenu);
+    mobileMenu.removeEventListener('click', handleContentClick);
     window.removeEventListener('keydown', e => {
         if (e.key === 'Escape') {
             closeMobileMenu();
         }
     });
+    burgerMenuIcon.style.fill = 'var(--DarkGreen)'
     mobileMenu.remove()
     document.body.style.overflow = 'auto'
     }
-//     function closeMobileMenu(e) {
-//     const removeEventListener = () => {
-//         document.removeEventListener('click', closeMobileMenu);
-//         mobileMenu.removeEventListener('click', closeMobileMenu);
-//         mobileMenuButton.removeEventListener('click', closeMobileMenu);
-//         window.removeEventListener('keydown', e => {
-//             if (e.key === 'Escape') {
-//                 closeMobileMenu();
-//             }
-//         });
-//         mobileMenu.remove()
-//         document.body.style.overflow = 'auto'
-//         };
 
-//         if (e && !mobileMenu.contains(e.target)) {
-//             closeMobileMenu();
-//             removeEventListener();
-//         } else {
-//             closeMobileMenu();
-//             removeEventListener();
-//     }
-    
-// }
 }
 
