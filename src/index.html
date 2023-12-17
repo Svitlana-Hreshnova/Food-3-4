@@ -19,39 +19,41 @@
 
 <body>
     <!-- Page Header -->
-    <header class="page-header">
-        <div class="container  header-container">
-            <a href="./index.html">
-                <svg class="logo" width="66" height="52">
-                    <use href="./images/icons.svg#logo"></use>
-                </svg>
-            </a>
-            <div class="header-right">
-                <nav class="header-nav">
-                    <ul class="header-list list">
-                        <li>
-                            <a class="nav-link active link" href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link" href="">About</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link" href="">Service</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link" href="">Menu</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link" href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="header-btn" type="button">Order Now</button>
-                <button class="menu-toggle js-open-menu" type="button">
-                    <svg class="burger-menu" width="28" height="28">
-                        <use href="./images/icons.svg#burger-menu"></use>
+    <header class="header-sticky">
+        <div class="page-header">
+            <div class="container  header-container">
+                <a href="./index.html">
+                    <svg class="logo" width="66" height="52">
+                        <use href="./images/icons.svg#logo"></use>
                     </svg>
-                </button>
+                </a>
+                <div class="header-right">
+                    <nav class="header-nav">
+                        <ul class="header-list list">
+                            <li>
+                                <a class="nav-link active link" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link link" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="nav-link link" href="#service">Service</a>
+                            </li>
+                            <li>
+                                <a class="nav-link link" href="#menu">Menu</a>
+                            </li>
+                            <li>
+                                <a class="nav-link link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header-btn js-open-modal" type="button">Order Now</button>
+                    <button class="menu-toggle js-open-menu" type="button">
+                        <svg class="burger-menu" width="28" height="28">
+                            <use href="./images/icons.svg#burger-menu"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -69,7 +71,7 @@
                         tristique. Duis
                         cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
                     </p>
-                    <button class="hero-btn" type="button">Order Now</button>
+                    <button class="hero-btn js-open-modal" type="button">Order Now</button>
                 </div>
                 <img class="hero-image" src="./images/hero.png" alt="meal" width="292" height="292">
             </div>
@@ -117,7 +119,7 @@
                         </li>
                     </ul>
                     <div class="offerings-wrap">
-                        <button class="offerings-btn" type="button">Order Now</button>
+                        <button class="offerings-btn js-open-modal" type="button">Order Now</button>
                         <div class="wrap-add-el">
                             <p class="offerings-text-el">Read More</p>
                             <svg width="13.5" height="13.5">
@@ -309,6 +311,7 @@
     </footer>
 
     <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>

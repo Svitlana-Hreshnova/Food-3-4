@@ -14,9 +14,11 @@ body {
 }
 
 button {
+    color: inherit;
     cursor: pointer;
     font-family: inherit;
     border: none;
+    padding: 0px;
 }
 
 h1,
@@ -53,6 +55,7 @@ img {
 }
 
 input {
+    color: inherit;
     font-family: inherit;
     outline: transparent;
 }
@@ -97,6 +100,13 @@ input {
 
 
 /* Header */
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--White);
+}
 
 .page-header {
     box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
@@ -1322,4 +1332,120 @@ input {
 .mb-menu-link:focus,
 .mb-menu-link:active {
     color: var(--DarkGreen);
+}
+
+
+
+/* Modal Window */
+
+.mdl-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(94, 99, 99, 0.70);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 300;
+}
+
+.mdl-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 320px;
+    padding: 32px 20px;
+    border-radius: 30px;
+    background: var(--YellowMain);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .mdl-window {
+        width: 458px;
+        padding: 32px 32px;
+    }
+}
+
+.mdl-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: var(--White);
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+}
+
+.mdl-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.mdl-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mdl-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-left: 12px;
+}
+
+.mdl-input {
+    width: 280px;
+    padding: 14px 12px;
+    border-radius: 30px;
+    border: 1px solid var(--DarkGreen);
+    background: var(--White);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+    .mdl-input {
+        width: 394px;
+    }
+}
+
+.mdl-input::placeholder {
+    color: #C4C4C4;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.mdl-form-btn {
+    display: flex;
+    width: 106px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid var(--DarkGreen);
+    background: var(--White);
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.mdl-form-btn:hover,
+.mdl-form-btn:focus,
+.mdl-form-btn:active {
+    background-color: var(--ButtonGreen);
 }
