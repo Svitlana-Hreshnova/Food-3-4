@@ -96,7 +96,7 @@ function createModal() {
     modalFormButton.type = "submit";
     modalFormButton.textContent = "Send"
     modalForm.appendChild(modalFormButton);
-    // modalFormButton.addEventListener('click', submitRegistration);
+    modalFormButton.addEventListener('click', submitRegistration);
 
     document.body.style.overflow = "hidden";
 
@@ -123,6 +123,31 @@ function createModal() {
         });
         modalBackdrop.remove();
         document.body.style.overflow = "initial";
+    }
+
+    function submitRegistration(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('user_name').value;
+        const phone = document.getElementById('user_phone').value;
+        const email = document.getElementById('user_email').value;
+
+        fetch('/submitRegistration', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, phone, email }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    // Добавьте здесь обработку успешной отправки данных
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Добавьте здесь обработку ошибок
+  });
     }
 
 };
