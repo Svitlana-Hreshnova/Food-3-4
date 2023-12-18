@@ -7,6 +7,10 @@
     --neutral-dark-gray: #505050;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--Black);

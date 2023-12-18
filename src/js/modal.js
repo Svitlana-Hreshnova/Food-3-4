@@ -53,6 +53,7 @@ function createModal() {
     modalInputName.id = "user_name";
     modalInputName.type = "text"
     modalInputName.placeholder = "Your name";
+    modalInputName.required = true;
     modalWrap_1.appendChild(modalInputName);
 
     const modalWrap_2 = document.createElement('div');
@@ -71,6 +72,7 @@ function createModal() {
     modalInputPhone.id = "user_phone";
     modalInputPhone.type = "tel";
     modalInputPhone.placeholder = "+38(0_ _) _ _ _   _ _   _ _";
+    modalInputPhone.required = true;
     modalWrap_2.appendChild(modalInputPhone);
 
     const modalWrap_3 = document.createElement('div');
@@ -89,6 +91,7 @@ function createModal() {
     modalInputEmail.id = "user_email";
     modalInputEmail.type = "email";
     modalInputEmail.placeholder = "example@gmail.com";
+    modalInputEmail.required = true;
     modalWrap_3.appendChild(modalInputEmail);
 
     const modalFormButton = document.createElement('button');
