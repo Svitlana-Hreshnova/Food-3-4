@@ -1,7 +1,11 @@
+import imageHero from '../images/hero.png'
+import imageHero_2 from '../images/hero2.png'
+import imageHero_3 from '../images/hero3.png'
+
 const image = [
-    "./images/hero.png",
-    "./images/hero2.png",
-    "./images/hero3.png",
+    imageHero,
+    imageHero_2,
+    imageHero_3,
 ]
 
 let currentImageIndex = 0;
