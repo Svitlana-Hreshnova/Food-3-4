@@ -17,7 +17,11 @@ function changeImage(direction) {
 }
 
 const buttonLeft = document.querySelector('.bttn-arrow-left');
-buttonLeft.addEventListener('click', changeImage('left'));
+buttonLeft.addEventListener('click', function () {
+    changeImage('left');
+});
 
 const buttonRight = document.querySelector('.bttn-arrow-right');
-buttonRight.addEventListener('click', changeImage('right'));
+buttonRight.addEventListener('click', function() {
+    changeImage('right');
+});
