@@ -72,7 +72,19 @@
                     </p>
                     <button class="hero-btn js-open-modal" type="button">Order Now</button>
                 </div>
+
+                <button class="bttn-arrow bttn-arrow-left" type="button" onclick="changeImage('left')">
+                    <svg class="icon-arrow" width="16.5" height="29">
+                        <use href="./images/icons.svg#icon-left"></use>
+                    </svg>
+                </button>
                 <img class="hero-image" src="./images/hero.png" alt="meal" width="292" height="292">
+                <button class="bttn-arrow bttn-arrow-right" type="button" onclick="changeImage('right')">
+                    <svg class="icon-arrow" width="16.5" height="29">
+                        <use href="./images/icons.svg#icon-right"></use>
+                    </svg>
+                </button>
+
             </div>
         </section>
         <!-- Offerings -->
@@ -304,8 +316,7 @@
                         <a class="library-link" href="">Cookies Settings</a>
                     </li>
                 </ul>
-                <p class="copyright">2023 Svitlana Hreshnova. <br>
-                    All right reserved.</p>
+                <p class="copyright">2023 Food Sta. All right reserved.</p>
             </div>
         </div>
     </footer>
@@ -313,6 +324,7 @@
     <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/header-links.js"></script>
+    <script src="./js/images.swiper.js"></script>
 </body>
 
 </html>
