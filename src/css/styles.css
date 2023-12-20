@@ -572,8 +572,8 @@ input {
 
 .offerings-btn:hover,
 .offerings-btn:focus {
-    border: none;
-    background-color: #BBF330;
+    border: 2px solid var(--ButtonGreen);
+    background-color: var(--ButtonGreen);
 }
 
 .offerings-wrap {
