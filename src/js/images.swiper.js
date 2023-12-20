@@ -15,3 +15,9 @@ function changeImage(direction) {
     const heroImage = document.querySelector('.hero-image');
     heroImage.src = image[currentImageIndex];
 }
+
+const buttonLeft = document.querySelector('.bttn-arrow-left');
+buttonLeft.addEventListener('click', changeImage('left'));
+
+const buttonRight = document.querySelector('.bttn-arrow-right');
+buttonRight.addEventListener('click', changeImage('right'));
